@@ -1,0 +1,31 @@
+{
+  "name": "node-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -L src/index.js",
+    "dev": "nodemon --exec babel-node -L src/index.js",
+    "build": "docker-compose build",
+    "up": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d",
+    "down": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}
