@@ -3,7 +3,7 @@ import { userRepository } from "../repositories/userRepository";
 class UserController {
 
     async browse(req, res) {
-        res.status(400).send("browsing");        
+        res.status(400).send("browsing new update 02052022");        
     };
 
     async getUsers(req, res) {
